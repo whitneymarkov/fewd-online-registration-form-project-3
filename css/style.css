@@ -1,0 +1,221 @@
+* {
+	box-sizing: border-box;
+}
+
+header {
+  background-color: #5fcf80;
+  padding: 10px;
+	max-width: 480px;
+}
+
+body {
+  font-family: 'NTR', sans-serif;
+	font-size: 1.25em;
+	font-weight: 300;
+  color: #21252b;
+	line-height: 1.25em;
+}
+
+fieldset {
+	border: none;
+}
+
+footer {
+	opacity: 0.5;
+}
+
+
+/*---------------layout and structure--------------------*/
+
+.wrapper {
+	max-width: 480px;
+}
+
+/*---------------DRY selectors--------------------*/
+
+.top-txt {
+	font-family: 'Roboto Slab', serif;
+	font-size: 1em;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.label-lb {
+  display: block;
+  margin: 1em 0 .6em 0;
+}
+
+.bolden {
+	text-decoration: none;
+  font-size: 1.3em;
+  font-weight: 600;
+	padding-top: 30px;
+}
+
+.txt-align {
+  text-align: center;
+}
+
+.box-padding {
+	padding: 5px;
+}
+
+.auto-margin {
+	margin: 0 auto;
+}
+
+.bot-margin {
+	margin-bottom: 15px;
+}
+
+.white-bg {
+	background: #fff;
+}
+
+.br {
+	border-radius: 5px;
+}
+
+.br-bot {
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.br-top {
+	border-top: solid 2px #e8ebed;
+	margin: 30px 0;
+}
+
+.submit {
+	display: inline-block;
+	background-color: #5fcf80;
+  padding: 15px 40px;
+  color: #FFF;
+  font-size: 1.3em;
+  width: 100%;
+  border: none;
+  margin-bottom: 5px;
+}
+
+.reset {
+	display: inline-block;
+	background-color: #fc9149;
+  padding: 15px 40px;
+  color: #FFF;
+  font-size: 1.3em;
+  width: 100%;
+  border: none;
+  margin-bottom: 5px;
+}
+
+/*--------------CSS selectors------------------------*/
+:root {
+	background: #eff0f1;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+	background: #eff0f1;
+	border: none;
+	height: auto;
+	padding: 5px;
+	width: 100%;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+
+
+/*--------------Focus states------------------------*/
+
+input:focus,
+select:focus {
+	border-left: solid 5px #5fcf80;
+	outline: none;
+}
+
+textarea:focus {
+	border: solid 2px #5fcf80;
+	outline: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
+    width: 95%;
+    -webkit-transition: width 1s ease;
+    -moz-transition: width 1s ease;
+    -o-transition: width 1s ease;
+    -ms-transition: width 1s ease;
+    transition: width 1s ease;
+}
+
+/*--------------Media queries------------------------*/
+
+@media screen and (min-width: 768px) {
+
+	header {
+		max-width: 100%;
+	}
+
+	/*---------------layout and structure--------------------*/
+
+	.wrapper {
+		max-width: 768px;
+	}
+
+	/* ---------------DRY selectors---------------*/
+
+	.label-wide {
+	  display: inline-block;
+		width: 35%;
+	  margin: 1em 0 .6em 0;
+	}
+
+	.submit {
+		width: 49.5%;
+	}
+
+	.reset {
+		width: 49.85%;
+	}
+
+	.box-padding {
+		padding: 15px;
+	}
+
+	/*--------------CSS selectors------------------------*/
+
+	input[type="text"],
+	input[type="email"],
+	input[type="tel"],
+	select {
+		width: 63%;
+		margin: 10px 0;
+	}
+
+	textarea {
+		width: 100%;
+	}
+
+
+	/*--------------Focus states------------------------*/
+
+	input[type="text"]:focus,
+	input[type="email"]:focus,
+	input[type="tel"]:focus {
+	    width: 60%;
+	    -webkit-transition: width 1s ease;
+	    -moz-transition: width 1s ease;
+	    -o-transition: width 1s ease;
+	    -ms-transition: width 1s ease;
+	    transition: width 1s ease;
+	}
+
+}
